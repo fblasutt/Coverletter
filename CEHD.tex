@@ -1,0 +1,78 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wilson Resume/CV
+% XeLaTeX Template
+% Version 1.0 (22/1/2015)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Howard Wilson (https://github.com/watsonbox/cv_template_2004) with
+% extensive modifications by Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage[round, sort , authoryear]{natbib}
+\usepackage{amsfonts,amssymb,amsmath}
+\usepackage{setspace,achicago,graphicx}
+
+
+\newenvironment{proof}[1][Proof]{\noindent \textbf{#1.} }{\  \rule{0.5em}{0.5em}}
+
+\usepackage[top=.9in, bottom=.9in, left=.9in , right=.9in,letterpaper]{geometry}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\bibliographystyle{apa}
+\parskip3mm\parindent0cm
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+  {\parbox{\textwidth}{\raggedleft \textbf{Fabio Blasutto}\\ % Address line 1
+ Place Montesquieu 3/L2.06.01\\ % Address line 2
+ 1348 Louvain-la-Neuve\\ % Date of birth 
+ Belgium \\+32 489545996\\\vspace{0.2cm}}
+  {\parbox{1.5\textwidth}{\raggedright April 26, 2019\\
+  Department of Economics\\
+The University of Chicago\\
+1126 E. 59th Street\\
+Chicago, IL 60637}}
+\vspace{0.5cm}\\
+To Whom It May Concern,\\
+\vspace{0.5cm}\\
+I am a 3rd year Ph.D. student at the \textit{Institut de Recherches \'Economiques et Sociales (IRES)} of UCLouvain, Belgium. My advisors are Prof. David de la Croix and Prof. Fabio Mariani.\vspace{0.3cm}\\
+I would hereby like to confirm my interest in joining the \textit{Center for the Economics and Human Development} (CEHD) of the University of Chicago as a visiting student for the 2020 winter term.\vspace{0.3cm}\\
+My research interests cover family economics, demographic economics and economic history. More in particular, the research that I plan to perform during my stay is an ongoing project of mine whose target is to understand how economic incentives drive the choice between marriage and informal cohabitation by education in the USA.\vspace{0.3cm}\\
+
+Starting from \citet{becker1981}, the research in economics found that people marry both for non-economic (i.e. love and companionship) and economic reasons, among which the sharing of public goods, the division of labor to exploit comparative advantages, as in \citet{chiappori1997}, and risk pooling, as the literature on limited commitment, among which \citet{voena2015} and \citet{rigas2015}, points out. All these reasons are able to explain why couples decide to live together, but they are silent about the choice between just living ``under the same roof in a love relationship", henceforth cohabitation, and marrying. More in particular, it is not clear why many couple cohabit before marriage and why do cohabitation rates differ by age and education.
+
+
+ In my research I address these questions, focusing on the role of cohabitation as an information device and on its interaction with economic incentives, and in particular with risk pooling, in forming different mating strategies by education. A preview of what I find is that for college graduates cohabitation is more of an investment good, used to gather information about the partner that they eventually marry, while for the others informal cohabitation is more of a consumption good, used as a cheap substitute for marriage.
+ 
+  In a first step of my research I show that mating behavior differs by education: single college graduate are relatively less likely to start a cohabitation rather than a marriage compared to the rest of the population, and they are also more likely to experience the transition from cohabitation to marriage. The data that I use is the ``National Longitudinal Survey of Youth 97", a national longitudinal survey of 8984 people born in the USA between 1980 and 1984 and followed with yearly interviews. There are two main reasons why I used this data. First, monthly precision for cohabitation and marriage history is provided, which is an important piece of information since it allowed me to account for cohabitation spells that are shorter than one year, which represent 40\% of the total number of cohabitations in the sample. Second, each round contains a large number of information regarding the education, family background, values and marital history both of the respondent and of his or her partner. This information is extremely important, because it allowed me to check that the mating differences by education still hold after I control for all these observed characteristics. This data is analyzed using a cox proportional hazard model, that relates some covariates to the the hazard rate, defined as the rate that the event of interested is realized at time $t$, conditional to having survived until that moment: this model is appropriate for my analysis since it controls for right censoring, which affects the unit of observations, which are singleness and cohabitation spells. The results obtained are the following:
+\begin{itemize}
+\item Single college graduates have a hazard rate of cohabitation\footnote{For computing this statistic and the one in the next bullet I actually used a proportional model of the \citet{fine1999} type, which accounts for the presence of multiple risks.} which is 91\% of the same hazard for the rest of the population.
+\item  Single college graduates have hazard rate of marriage which is 106\% of the same probability for the rest of the population.
+\item Cohabiting college graduates have a hazard rate of marriage which is 175\% of the same probability for the rest of the population. 
+\end{itemize}
+ Besides this, I also provide evidence suggesting that premarital cohabitation might work as a learning device, since it will be one of the main mechanisms of the theory. Using again a cox regression, I find that both the extensive (having cohabited or not) and intensive (its length) margins of cohabitation matter: while the duration of marriage for couples that have married without cohabiting is lower than the one of people that have cohabited for a short period, the probability of divorce is decreasing in the length of cohabitation. This result suggests that the self-selection and information-gathering motives may be relevant for understanding cohabitation.
+  
+   In a second step if my research, I propose a theory of search in the mating market (marriage and cohabitation), where agents take their decisions according to the realization of idiosyncratic income shocks and perceived match quality, in the spirit of \citet{jovanovic1979}. When singles, agents meet in every period a potential partner associated with an education level, income and match quality, that is imperfectly observed. After the draw, they can decide whether to stay single, cohabit or marry. In the last two cases, in every period they receive an update in their match quality and they decide whether to remain in the same status or to change it. Agents are heterogeneous with respect to their income, which is subject to idiosyncratic persistent shocks, and their education, which affects their earnings: since the divorce cost is assumed to be monetary, the least educated are \textit{ceteris paribus} less likely to enter marriage compared to the others, since in case of divorce this cost would hit harder on their concave utility. Then, these agents will substitute marriage with serial cohabitation, while the most educated will cohabit to gather information about their partner, before eventually marrying her. The model is built to rationalize the new empirical regularities that I obtained in the first step of my research: the risk of divorce is relatively low for couples that have not cohabited before marriage, it is the highest for couples that cohabited for short periods and then decreases monotonically for longer spells of premarital cohabitation. The model rationalizes these facts with self selection into direct marriage for couples that have a high initial match quality and with learning the decrease in the hazard of divorce for long cohabitation spells. It is worth noting that a non-zero marriage rate can be sustained only if there are gains of marriage with respect to cohabitation. These gains are modeled using a dynamic collective model with limited commitment, which enables couples to insure against idiosyncratic and persistent income shocks: since the cost of divorce is higher than the one of separation, marriage will display higher commitment, allowing for a more efficient risk sharing when match quality if high. Instead, when the match quality is low enough, cohabitation becomes a better strategy since the lower expected cost of separation will more than compensate the loss in terms of commitment. The model described here is estimated using the method of simulated moments: I chose the moments that I want to match such that, once I am close enough to reproduce them, the mating market of our economy looks realistic, as partnership durations and the transition rate between cohabitation and marriage. Moreover, I also target the evolution of the hazard of marriage and separation for cohabitation spells over time and the fraction of people that have been cohabiting before marrying, by year of marriage: these last moments will allow me to identify the learning component in my model, as well as the self-selection effect. Even though being able to fit the data is an important test for the model, there could be other models, different from mine, which are able fit equally well the data. Therefore, I also check the ability of the model to reproduce other moments of the mating market taken from the data that I did not use as targets. The fit of both targeted and non targeted moments is overall good, which give me confidence that the model is reliable for answering the initial research question: running the proportional hazard model described above on simulated data, I conclude that most of the observed differences in the mating strategies by education can be explained by the incentives present in the model.
+\vspace{0.3cm}\\
+
+
+I think that continuing the research project that I presented above at CEHD would benefit both me and the research center. In fact, one of the main objectives of the research performed at CEHD is to understand the roots of the gaps in cognitive and non cognitive skills between the advantaged and the disadvantaged, with a focus on the early determinants of those. Family background is one of the main underlying factors behind these gaps, and hence understanding family formation and dissolution, which is the main focus of my research project, can be crucial for comprehending the outcomes of children. More in particular, the presence of informal cohabitation as an alternative partnership might have non trivial effects on the overall well-being of children: on one hand, children that were born in a cohabiting relationship are more likely to see their parents separated one day, but on the other hand cohabitation can help people to recognize low quality partners and hence avoiding marrying that person or having children with her. If parents care about their children and if partnership choices impacts their well being, then we can also expect that people think about the well being of their future children when choosing whether to cohabit or marry. In this respect, having the possibility to work at CEHD would give me the opportunity to interact with researcher that are experts in the mechanisms that drive the parental investment in children, which could help me to better understand the choice between marriage and cohabitation and to improve my ongoing research project. More in particular, interacting with CEHD researcher could help me to rationalize an additional stylized fact that I did not consider in my analysis so far: the disadvantaged have children while cohabiting, whereas this is not the case for college graduates. This can happen because the disadvantaged are less sensible to the quality of the investment in their children and because cohabitation is their obliged choice for financial reasons, as suggested by my model. While both mechanisms are probably at play, it is non trivial how to disentangle the relative effect of these two. \vspace{0.3cm}\\
+Thank you in advance for your time and consideration.\vspace{0.3cm}\\
+Best regards,\vspace{0.5cm}\\
+Fabio Blasutto
+
+\bibliography{mybibliography}
+\end{document}
