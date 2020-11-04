@@ -1,0 +1,190 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.2 (25/3/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\input{structure.tex}
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+%\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+\pagestyle{empty}
+\firstname{Fabio} % Your first name
+\familyname{Blasutto} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\address{Voie Minckelers 6/401}{1348 Louvain-La-Neuve (BE) }
+\mobile{(0032) 48954 5996}
+\email{fabio.blasutto@studbocconi.it}
+\photo[60pt][0.15pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\tabbedblock{
+	\bf{2014 -} \> Bocconi University, MSc in Economic and Social Sciences(DES), Milano. \\
+	\bf{Present}
+	\> Selected for the Joint Degree Program with Université catholique de Louvain. \\
+	\>\+
+	\textit{Current GPA:  27.727/30   - All exams completed.}
+}
+
+%------------------------------------------------
+
+\tabbedblock{
+	\bf{2011-2014} \>Bocconi University, BSc  in Economic and Social Sciences(CLES), Milano.\\
+	\>
+	\textit{GPA: 28,95/30. Final grade 110 cum laude.}\\
+	\>Thesis advisor: Professor Carlo Devillanova.
+}
+
+%%%%%
+
+\tabbedblock{
+	\bf{Fall 2014} \>Exchange student at University of California, Irvine Campus, Irvine. \\
+	\>
+	\textit{GPA: 4,0/4.}
+}
+
+%%%
+
+\tabbedblock{
+	\bf{2006-2011} \>Udine, High school student at Liceo scientifico ''Giovanni Marinelli''.\\
+	\>Course:PNI Mathematics and Physics. 
+	\textit {Final grade: 88/100.}
+}
+
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT HISTORY SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+
+\job
+{Feb 2015 -}{Present}
+{Bocconi University, Via Sarfatti 25, 20136, Milano (MI), Italy.}{}
+{On field research program at IGIER research centre with Professor Nicola Pavoni.
+}{Analysis of Life Cycle agents saving behavior using a theoretical model that takes into account self-control behavior. Research is conducetd using Stata, Matlab and LaTex softwares.}
+
+%----------------------------------------------------------------------------------------
+%	IT/COMPUTING SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+\tabbedblock{
+	\ {Italian} \>Mother tongue.
+}
+\tabbedblock{
+	\ {English} \>Fluent. Certification: IELTS Academic, grade:7,5.
+}
+\tabbedblock{
+	\ {Spanish} \>Basic, second foreign lenguage at the BSc (level B1) .
+}
+
+%----------------------------------------------------------------------------------------
+%	IT/COMPUTING SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+\textit{Microsoft office(good, ECDL Core certification), Stata(fair), Matlab(fair), Eviews(basic), LaTex(basic).}
+%------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Additional Information}
+
+\tabbedblock{
+	\ {Sports} \> Go-karting, $5^{th}$ at Italian Open master in 2010.\\
+	\>Athletics, agonistic level (2000-2011).
+}
+\tabbedblock{
+	\ {Volounteer} \>Colletta alimentare day from 2009 to 2011.\\
+	\ {Activity}
+}
+\tabbedblock{
+	\ {Instruments} \>Guitar.
+}
+\tabbedblock{
+	\ Class representative during $1^{st}$, $2^{nd}$, $3^{rd}$ and $5^{th}$ year of High School.
+}
+\bigskip
+\bigskip
+\textit{I Authorize the processing of my personal data into your data system according to Law 196/2003}
+%----------------------------------------------------------------------------------------
+
+\end{document}
